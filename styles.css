@@ -1,146 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+:root {
+  --Nutmeg: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+  --White: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+}
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: hsl(30, 54%, 90%);
-    padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  max-width: 1440px;
+  min-height: 100vh;
+  background-color: var(--Eggshell);
+  padding: 122px 352px;
+}
+section {
+  max-width: 740px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--White);
+  padding: 40px 40px 29px 40px;
+  border-radius: 25px;
+}
+img {
+  width: 100%;
+  border-radius: 12px;
+}
+h1 {
+  font-size: 40px;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 33px;
+}
+.p_primary {
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  color: var(--Wenge-Brown);
+  padding-top: 15px;
+  padding-bottom: 33px;
+  line-height: 24px;
+}
+.div_primary {
+  background-color: var(--Rose-White);
+  padding: 24px 0 30px 28px;
+  border-radius: 10px;
+}
+h2 {
+  font-size: 20px;
+  font-family: "Outfit", sans-serif;
+  color: var(--Dark-Raspberry);
+  letter-spacing: -.18px;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 16px;
+  padding-left: 22px;
+}
+ul li {
+  font-family: "Outfit", sans-serif;
+  color: var(--Wenge-Brown);
+  padding-left: 18px;
+}
+ul li::marker {
+  color: var(--Dark-Raspberry);
+  font-size: 12px;
+}
+h3 {
+  font-size: 28px;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--Nutmeg);
+  padding-top: 27px;
+  padding-bottom: 4px;
+}
+.div_second {
+  border-top: 1px solid var(--Light-Grey);
+  margin-top: 33px;
+}
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 14px;
+  padding-left: 25px;
+}
+ol li {
+  font-family: "Outfit", sans-serif;
+  color: var(--Wenge-Brown);
+  padding-left: 15px;
+  line-height: 24px;
+}
+ol li::marker {
+  color: var(--Dark-Raspberry);
+  font-weight: bold;
+}
+.div_third {
+  border-top: 1px solid var(--Light-Grey);
+  margin-top: 31px;
+}
+.div_third p {
+  font-family: "Outfit", sans-serif;
+  color: var(--Wenge-Brown);
+  padding-top: 16px;
+  padding-bottom: 14px;
+}
+.div_third strong {
+  color: var(--Nutmeg);
+  margin-left: -8px;
+}
+.div_third_div {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 32px;
+}
+.div_third_div:nth-child(3),
+.div_third_div:nth-child(4),
+.div_third_div:nth-child(5) {
+  border-bottom: 1px solid var(--Light-Grey);
+}
+.div_third_div div {
+  width: 100%;
+  font-family: "Outfit", sans-serif;
+  color: var(--Wenge-Brown);
+  font-size: 16px;
+  padding-top: 14px;
+  padding-bottom: 13px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
-.title, .title-section {
-    margin-top: 30px;
-    font-family: Young Serif;
-}
+/*responsive screen wise design*/
 
-table {
-    margin-top: 20px;
-    border-collapse: separate;
-    border-spacing: 0px 10px;
-}
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    border: none;
-    border-radius: 20px;
-    background-color: hsl(330, 100%, 98%);
-}
 
-p, li, td {
-    margin: 0;
-    font-family: Outfit;
-    font-size: 16px;
-    color: hsl(30, 10%, 34%);
-}
-
-td, .td2 {
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-}
-
-.td2 {
-    font-weight: bold;
-    color:hsl(14, 45%, 36%);
-}
-
-li {
-    margin-bottom: 10px;
-    padding-left: 20px;
-}
-
-ol li::marker{
-    font-weight: bold;
-    color: hsl(14, 45%, 36%);
-}
-
-.separator {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-    height: 1px;
-    background-color: rgba(0,0,0,0.1);
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
-}
-
-.mainbox {
-    width: 700px;
-    height: 1650px;
-    background-color: white;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 60px;
-    column-gap: 30px;
-}
-
-.recipe-pic {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.text {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-}
-
-.intro {
-    margin-top: 20px;
-}
-
-.prep-time {
-    margin-top: 60px;
-    font-size: 23px;
-    font-weight: 800;
-    color: hsl(332, 51%, 32%);
-}
-
-.title {
-    color: hsl(24, 5%, 18%);
-    font-size: 50px;
-}
-
-.title-section {
-    color: hsl(14, 45%, 36%);
-    font-size: 30px;
-}
-@media (max-width: 1440px) {
-    p, li, td {
-        font-size: 1.3em;
+@media (max-width: 1275px) {
+    main {
+        padding: 61px 176px;
     }
-    .prep-time {
-        font-size: 1em;
+}
+
+@media (max-width: 925px) {
+    main {
+        padding: 30px 88px;
     }
+}
+
+@media (max-width: 725px) {
+    main {
+        max-width: 375px;
+        background-color: var(--White);
+        padding: 0;
+    }
+
+    section {
+        position: relative;
+        padding: 178px 32px 29px 32px;
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 0px;
+    }
+
     h1 {
-        font-size: 1.6em;
-    }
-    .title{
-        font-size: 3em;
-    }
-    .title-section{
-        font-size: 3em;
+        font-size: 36px;
+        line-height: 36px;
     }
 
-}
-@media (max-width: 375px) {
-    p, li, td {
-        font-size: 15px;
-    }
-    .prep-time {
-        font-size: 20;
-    }
-    h1 {
-        font-size: 40px;
-    }
-    .title{
-        font-size: 30px;
-    }
-    .title-section{
-        font-size: 20px;
+    .p_primary {
+        padding-top: 24px;
+        padding-bottom: 33px;
     }
 
+    .div_primary {
+        padding: 20px 25px 24px 25px;
+    }
+
+    ul {
+        gap: 8px;
+        padding-top: 14px;
+    }
+
+    ul li {
+        line-height: 24px;
+    }
+
+    .div_second {
+        margin-top: 31px;
+    }
+
+    .div_third p {
+        line-height: 24px;
+        padding-top: 14px;
+        padding-bottom: 12px;
+    }
 }
